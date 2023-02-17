@@ -1,6 +1,6 @@
-# 2023myhome
-## h2
-### h3
+# MY HOMEPAGE
+
+1. company http://www.naver.com
 
 {김보희}{https://github.com/kbohee)
 
@@ -10,10 +10,10 @@
     - 예
 
 
----html 
+```html 
 <div>test</div>
----
+```
 
----css
+```css
 div.box{width:100px}
----
+```
