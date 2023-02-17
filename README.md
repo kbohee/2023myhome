@@ -2,7 +2,7 @@
 
 1. company http://www.naver.com
 
-{김보희}{https://github.com/kbohee)
+company https://www.kbohee.github.io/2023myhome/01site
 
 1. 안녕하세요.
 2. 반갑습니다.
