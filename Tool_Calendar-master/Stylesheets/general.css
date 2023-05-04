@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ddd;
+    color: #7d7d7d;
+    font-size: 1rem;
+}
+
+/* REUSABLE CLASSES */
+.flex { display: flex; }
+.fixed { position: fixed; }
+.justify-center { justify-content: center; }
+.align-items { align-items: center;}
+.text-center { text-align: center; }
+.col { flex-direction: column; }
+.row { flex-direction: row; }
+.spacebetween { justify-content: space-between; }

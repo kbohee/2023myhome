@@ -1,0 +1,133 @@
+main { 
+    background-color: #ddd; 
+    position: fixed;
+    top: 5rem;
+    bottom: 1.5rem;
+    align-items: center; 
+    margin-left: 400px; 
+    width: calc(100vw - 400px); 
+    overflow-y: scroll;
+}
+
+.calendar { 
+    margin: auto;
+    width: 80%;  
+    min-width: 800px;
+    min-height: 550px;
+    border-radius: 10px; 
+    padding: 1rem 0 1rem 0;
+}
+
+.month { 
+    display: flex; 
+    justify-content: space-between; 
+    border-radius: 10px 10px 0px 0px; 
+    background-color: #7f94c5; 
+    align-items: center;
+    width: 100%; 
+    height: 6rem; 
+    padding: 0px 2rem; 
+    color:white;
+}
+
+.month i { 
+    cursor: pointer; 
+    font-size: 2rem;
+}
+
+.month i:hover {
+    color: #47536f;
+}
+
+.month h1 { 
+    text-align: center;
+    text-transform: uppercase; 
+    font-weight: 400;
+    margin-bottom: 0.2rem; 
+}
+
+.weekdays { 
+    background-color: #2d3d61; 
+    border-radius: 0px 0px 10px 10px;
+    width: 100%; 
+    height: 3rem; 
+    padding: 0px 0.4rem; 
+    display: flex; 
+    align-items: center; 
+    color:white;
+}
+
+.weekdays div { 
+    letter-spacing: 0.1rem; 
+    width: calc(100vw - 350px); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.days { 
+    display: grid;
+    grid-template-columns: repeat(7, 14.25%);
+    padding: 0.5rem 0.2rem 0.5rem; 
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 10px;
+}
+
+.day:hover {
+    background: #8da1cf;
+}
+
+.day { 
+    font-size: 22.4px; 
+    margin: 10.4px; 
+    height: 60px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    transition: background-color 0.05s ease 0s; 
+    position: relative;
+    cursor: pointer;
+}
+
+.prev-date, .next-date { 
+    opacity: 0.5; 
+}
+
+.today { 
+    background-color: #aec1ec; 
+    border-radius: 3px; 
+}
+
+.active-color {
+    background: #c2cce2;
+    border-radius: 3px; 
+}
+
+.holiday-reminder { 
+    width: 100%;
+    background-color: #8da1cf; 
+    color: whitesmoke;
+    border-radius: 3px;
+    font-size: 0.6rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0.1rem;
+}
+
+.todo-reminder {
+    width: 15px;
+    height: 15px; 
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    color: #acbde2;
+    background-color: #2d3d61;
+    border-radius: 100%;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

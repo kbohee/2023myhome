@@ -1,0 +1,231 @@
+#todo-container {
+    display: flex;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color:#e7eafc;
+}
+
+.todoToday, .todo-selected, .todo-all {
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 20px;
+    width: 100%;
+    margin: 0.2rem;
+    padding: 1rem;
+}
+
+.todo-fold {
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.todo-date-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    height: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #43547B;
+    background-color: #E1E7F5;
+}
+
+.todoList {
+   padding: 0px;
+   max-height: 230px;
+   overflow-y: auto;
+}
+
+.todoList-all {
+    display: none;
+}
+
+.date-display {
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+}
+
+.todoList li {
+    display: flex;
+    list-style: none;
+    line-height: 45px;
+    height: 45px;
+    position: relative;
+    background-color: #fafafa;
+    margin: 8px 0 8px 0;
+    border-radius: 3px;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList-all li {
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.pending-all {
+    margin-left: 0.2rem;
+}
+
+.inputField {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputField > input {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.4rem;
+    height: 2.2rem;
+    outline: none;
+    border: 1px solid white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+}
+
+.todo-item {
+    width: 100%;
+}
+
+.input-date-and-button {
+    margin: auto;
+    width: 100%;
+}
+
+.todo-date {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0.5rem;
+    background-color: #e7eafc;
+    font-size: 1rem;
+    color: #43547B;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    width: 11.5rem;
+    height: 2.2rem;
+}
+
+.inputField button {
+    font-family: 'Montserrat', sans-serif;
+    height: 2.2rem;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    background: #43547B;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    opacity: 0.37;
+    pointer-events: none;
+}
+
+.inputField button:hover {
+    background: #8da1cf;
+    color: white;
+    transition: .3s;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.trash {
+    position: absolute;
+    right: -45px;
+    color: white;
+    background: #3e4b97;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit {
+    position: absolute;
+    right: -45px;
+    color: white;
+    background: #43547B;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit i, .trash i {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoList li:hover .trash {
+    right: 0px;
+}
+
+.todoList li:hover .edit {
+    right: 47px;
+}
+
+#todo-footer {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#todo-footer {
+    font-size: 0.8rem;
+}
+
+#clear-all-btn {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    background: #43547B;
+    color: white;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0.2rem 0.6rem;
+    opacity: 0.37;
+    pointer-events: none;
+}
+
+#clear-all-btn:hover {
+    background: #8da1cf;
+    color: white;
+    transition: .3s;
+}
+
+#todo-footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.disable {
+    display: none;
+}
+
+/* Styling for date input */
+
+::-webkit-calendar-picker-indicator {
+    color: #43547B;
+    padding: .4rem;
+    cursor: pointer;
+}

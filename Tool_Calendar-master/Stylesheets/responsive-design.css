@@ -1,0 +1,96 @@
+/* Extra extra large devices 1600px and up */
+
+@media (min-width: 1600px) {
+
+    .calendar { 
+        width: 70%; 
+        max-width: 1400px;
+    }
+}
+
+/* Extra large devices 1200px and up */
+
+@media (max-width: 1200px) {
+       
+    aside { width: 30%; }
+
+    main { 
+        width: 70%; 
+        margin-left: 30%; 
+    }
+
+    .calendar { 
+        width: 90%;  
+        min-width: 500px;
+    }
+
+    .todo-date-title, .todoList { font-size: 0.8rem;}
+    .todo-reminder { right: 0px; }
+    .inputField > input, .todo-date { font-size: 0.8rem; }
+
+}
+
+/* Small to medium devices 768px and below but no less than 600px */
+
+@media (max-width: 768px) {
+    
+    header {
+        position: relative;
+        display: flex;
+        z-index: 99;
+    }
+    
+    aside {
+        background-color: #e7eafc;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    main { 
+        width: 100%; 
+        margin: auto;
+        position: unset;
+    }
+
+    #intro-container { height: 6rem; }
+    .intro-background { max-height: 12rem; }
+
+    #todo-container {
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .todo-reminder {
+        display: flex;
+        box-sizing: border-box;
+        overflow-y: scroll;
+    }
+
+    .todoToday, .todo-selected, .todo-all { max-width: unset; }
+    .calendar { width: 95%;}
+    footer { position: static; }
+    
+}
+
+/* Extra small devices 600px and below */
+
+@media (max-width: 600px) {
+
+    header { 
+        position: relative; 
+        z-index: 99;
+    }
+
+    .calendar, .todo-selected { display: none; }
+
+    footer { 
+        position: absolute; 
+        white-space:nowrap;
+        font-size: 0.55rem; 
+        background-color:#e7eafc;
+    }
+}
+
